@@ -12,6 +12,11 @@ int create_node(int value)
 	int cnt=0;
 	
 	ptr = (ln_t*)malloc(sizeof(ln_t));
+	if (ptr ==NULL)
+	{
+		//printf
+		return -1;
+	}
 	
 	ptr -> data =value;
 	ptr -> next = NULL;
